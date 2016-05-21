@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC8693231CEFFEC000A29963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693221CEFFEC000A29963 /* main.m */; };
+		CC8693261CEFFEC000A29963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693251CEFFEC000A29963 /* AppDelegate.m */; };
+		CC8693291CEFFEC000A29963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693281CEFFEC000A29963 /* ViewController.m */; };
+		CC86932C1CEFFEC000A29963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC86932A1CEFFEC000A29963 /* Main.storyboard */; };
+		CC86932E1CEFFEC000A29963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC86932D1CEFFEC000A29963 /* Assets.xcassets */; };
+		CC8693311CEFFEC000A29963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC86932F1CEFFEC000A29963 /* LaunchScreen.storyboard */; };
+		CC86933C1CEFFEC000A29963 /* SecretPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86933B1CEFFEC000A29963 /* SecretPhotosTests.m */; };
+		CC8693471CEFFEC000A29963 /* SecretPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693461CEFFEC000A29963 /* SecretPhotosUITests.m */; };
+		CC8693581CF0007D00A29963 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693551CF0007D00A29963 /* UIView+Geometry.m */; };
+		CC8693591CF0007D00A29963 /* UIView+IBInspect.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693571CF0007D00A29963 /* UIView+IBInspect.m */; };
+		CC86935C1CF0023800A29963 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86935B1CF0023800A29963 /* PhotosViewController.m */; };
+		CC86935F1CF0035100A29963 /* ConstantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86935E1CF0035100A29963 /* ConstantManager.m */; };
+		CC8693621CF005DC00A29963 /* MSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693611CF005DC00A29963 /* MSImagePickerController.m */; };
+		CC8693661CF0086400A29963 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693641CF0086400A29963 /* PhotoCell.m */; };
+		CC8693671CF0086400A29963 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8693651CF0086400A29963 /* PhotoCell.xib */; };
+		CC86936A1CF0147E00A29963 /* CheckPhotoViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC8693381CEFFEC000A29963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC8693161CEFFEC000A29963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC86931D1CEFFEC000A29963;
+			remoteInfo = SecretPhotos;
+		};
+		CC8693431CEFFEC000A29963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC8693161CEFFEC000A29963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC86931D1CEFFEC000A29963;
+			remoteInfo = SecretPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC86931E1CEFFEC000A29963 /* SecretPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8693221CEFFEC000A29963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC8693241CEFFEC000A29963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC8693251CEFFEC000A29963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC8693271CEFFEC000A29963 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC8693281CEFFEC000A29963 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC86932B1CEFFEC000A29963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC86932D1CEFFEC000A29963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC8693301CEFFEC000A29963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC8693321CEFFEC000A29963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8693371CEFFEC000A29963 /* SecretPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC86933B1CEFFEC000A29963 /* SecretPhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretPhotosTests.m; sourceTree = "<group>"; };
+		CC86933D1CEFFEC000A29963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8693421CEFFEC000A29963 /* SecretPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8693461CEFFEC000A29963 /* SecretPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretPhotosUITests.m; sourceTree = "<group>"; };
+		CC8693481CEFFEC000A29963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8693541CF0007D00A29963 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Geometry.h"; path = "Tools/UIView+Geometry.h"; sourceTree = "<group>"; };
+		CC8693551CF0007D00A29963 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Geometry.m"; path = "Tools/UIView+Geometry.m"; sourceTree = "<group>"; };
+		CC8693561CF0007D00A29963 /* UIView+IBInspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+IBInspect.h"; path = "Tools/UIView+IBInspect.h"; sourceTree = "<group>"; };
+		CC8693571CF0007D00A29963 /* UIView+IBInspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+IBInspect.m"; path = "Tools/UIView+IBInspect.m"; sourceTree = "<group>"; };
+		CC86935A1CF0023800A29963 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		CC86935B1CF0023800A29963 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		CC86935D1CF0035100A29963 /* ConstantManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantManager.h; sourceTree = "<group>"; };
+		CC86935E1CF0035100A29963 /* ConstantManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantManager.m; sourceTree = "<group>"; };
+		CC8693601CF005DC00A29963 /* MSImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSImagePickerController.h; path = Tools/MSImagePickerController.h; sourceTree = "<group>"; };
+		CC8693611CF005DC00A29963 /* MSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSImagePickerController.m; path = Tools/MSImagePickerController.m; sourceTree = "<group>"; };
+		CC8693631CF0086400A29963 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		CC8693641CF0086400A29963 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		CC8693651CF0086400A29963 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		CC8693681CF0147E00A29963 /* CheckPhotoViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckPhotoViewControler.h; sourceTree = "<group>"; };
+		CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckPhotoViewControler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC86931B1CEFFEC000A29963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8693341CEFFEC000A29963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC86933F1CEFFEC000A29963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC8693151CEFFEC000A29963 = {
+			isa = PBXGroup;
+			children = (
+				CC8693201CEFFEC000A29963 /* SecretPhotos */,
+				CC86933A1CEFFEC000A29963 /* SecretPhotosTests */,
+				CC8693451CEFFEC000A29963 /* SecretPhotosUITests */,
+				CC86931F1CEFFEC000A29963 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC86931F1CEFFEC000A29963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC86931E1CEFFEC000A29963 /* SecretPhotos.app */,
+				CC8693371CEFFEC000A29963 /* SecretPhotosTests.xctest */,
+				CC8693421CEFFEC000A29963 /* SecretPhotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC8693201CEFFEC000A29963 /* SecretPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				CC8693541CF0007D00A29963 /* UIView+Geometry.h */,
+				CC8693551CF0007D00A29963 /* UIView+Geometry.m */,
+				CC8693561CF0007D00A29963 /* UIView+IBInspect.h */,
+				CC8693571CF0007D00A29963 /* UIView+IBInspect.m */,
+				CC8693601CF005DC00A29963 /* MSImagePickerController.h */,
+				CC8693611CF005DC00A29963 /* MSImagePickerController.m */,
+				CC8693631CF0086400A29963 /* PhotoCell.h */,
+				CC8693641CF0086400A29963 /* PhotoCell.m */,
+				CC8693651CF0086400A29963 /* PhotoCell.xib */,
+				CC86935D1CF0035100A29963 /* ConstantManager.h */,
+				CC86935E1CF0035100A29963 /* ConstantManager.m */,
+				CC8693271CEFFEC000A29963 /* ViewController.h */,
+				CC8693281CEFFEC000A29963 /* ViewController.m */,
+				CC86935A1CF0023800A29963 /* PhotosViewController.h */,
+				CC86935B1CF0023800A29963 /* PhotosViewController.m */,
+				CC8693681CF0147E00A29963 /* CheckPhotoViewControler.h */,
+				CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */,
+				CC8693211CEFFEC000A29963 /* Supporting Files */,
+			);
+			path = SecretPhotos;
+			sourceTree = "<group>";
+		};
+		CC8693211CEFFEC000A29963 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC86932A1CEFFEC000A29963 /* Main.storyboard */,
+				CC8693321CEFFEC000A29963 /* Info.plist */,
+				CC86932D1CEFFEC000A29963 /* Assets.xcassets */,
+				CC86932F1CEFFEC000A29963 /* LaunchScreen.storyboard */,
+				CC8693241CEFFEC000A29963 /* AppDelegate.h */,
+				CC8693251CEFFEC000A29963 /* AppDelegate.m */,
+				CC8693221CEFFEC000A29963 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC86933A1CEFFEC000A29963 /* SecretPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC86933B1CEFFEC000A29963 /* SecretPhotosTests.m */,
+				CC86933D1CEFFEC000A29963 /* Info.plist */,
+			);
+			path = SecretPhotosTests;
+			sourceTree = "<group>";
+		};
+		CC8693451CEFFEC000A29963 /* SecretPhotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC8693461CEFFEC000A29963 /* SecretPhotosUITests.m */,
+				CC8693481CEFFEC000A29963 /* Info.plist */,
+			);
+			path = SecretPhotosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC86931D1CEFFEC000A29963 /* SecretPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC86934B1CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotos" */;
+			buildPhases = (
+				CC86931A1CEFFEC000A29963 /* Sources */,
+				CC86931B1CEFFEC000A29963 /* Frameworks */,
+				CC86931C1CEFFEC000A29963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretPhotos;
+			productName = SecretPhotos;
+			productReference = CC86931E1CEFFEC000A29963 /* SecretPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC8693361CEFFEC000A29963 /* SecretPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC86934E1CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotosTests" */;
+			buildPhases = (
+				CC8693331CEFFEC000A29963 /* Sources */,
+				CC8693341CEFFEC000A29963 /* Frameworks */,
+				CC8693351CEFFEC000A29963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC8693391CEFFEC000A29963 /* PBXTargetDependency */,
+			);
+			name = SecretPhotosTests;
+			productName = SecretPhotosTests;
+			productReference = CC8693371CEFFEC000A29963 /* SecretPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC8693411CEFFEC000A29963 /* SecretPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8693511CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotosUITests" */;
+			buildPhases = (
+				CC86933E1CEFFEC000A29963 /* Sources */,
+				CC86933F1CEFFEC000A29963 /* Frameworks */,
+				CC8693401CEFFEC000A29963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC8693441CEFFEC000A29963 /* PBXTargetDependency */,
+			);
+			name = SecretPhotosUITests;
+			productName = SecretPhotosUITests;
+			productReference = CC8693421CEFFEC000A29963 /* SecretPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC8693161CEFFEC000A29963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "武淅 段";
+				TargetAttributes = {
+					CC86931D1CEFFEC000A29963 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NYLW8B5Y4M;
+					};
+					CC8693361CEFFEC000A29963 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CC86931D1CEFFEC000A29963;
+					};
+					CC8693411CEFFEC000A29963 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CC86931D1CEFFEC000A29963;
+					};
+				};
+			};
+			buildConfigurationList = CC8693191CEFFEC000A29963 /* Build configuration list for PBXProject "SecretPhotos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC8693151CEFFEC000A29963;
+			productRefGroup = CC86931F1CEFFEC000A29963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC86931D1CEFFEC000A29963 /* SecretPhotos */,
+				CC8693361CEFFEC000A29963 /* SecretPhotosTests */,
+				CC8693411CEFFEC000A29963 /* SecretPhotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC86931C1CEFFEC000A29963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8693671CF0086400A29963 /* PhotoCell.xib in Resources */,
+				CC8693311CEFFEC000A29963 /* LaunchScreen.storyboard in Resources */,
+				CC86932E1CEFFEC000A29963 /* Assets.xcassets in Resources */,
+				CC86932C1CEFFEC000A29963 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8693351CEFFEC000A29963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8693401CEFFEC000A29963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC86931A1CEFFEC000A29963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8693661CF0086400A29963 /* PhotoCell.m in Sources */,
+				CC8693581CF0007D00A29963 /* UIView+Geometry.m in Sources */,
+				CC8693621CF005DC00A29963 /* MSImagePickerController.m in Sources */,
+				CC86935C1CF0023800A29963 /* PhotosViewController.m in Sources */,
+				CC8693291CEFFEC000A29963 /* ViewController.m in Sources */,
+				CC86936A1CF0147E00A29963 /* CheckPhotoViewControler.m in Sources */,
+				CC8693591CF0007D00A29963 /* UIView+IBInspect.m in Sources */,
+				CC86935F1CF0035100A29963 /* ConstantManager.m in Sources */,
+				CC8693261CEFFEC000A29963 /* AppDelegate.m in Sources */,
+				CC8693231CEFFEC000A29963 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8693331CEFFEC000A29963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC86933C1CEFFEC000A29963 /* SecretPhotosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC86933E1CEFFEC000A29963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8693471CEFFEC000A29963 /* SecretPhotosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC8693391CEFFEC000A29963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC86931D1CEFFEC000A29963 /* SecretPhotos */;
+			targetProxy = CC8693381CEFFEC000A29963 /* PBXContainerItemProxy */;
+		};
+		CC8693441CEFFEC000A29963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC86931D1CEFFEC000A29963 /* SecretPhotos */;
+			targetProxy = CC8693431CEFFEC000A29963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC86932A1CEFFEC000A29963 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC86932B1CEFFEC000A29963 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC86932F1CEFFEC000A29963 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC8693301CEFFEC000A29963 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC8693491CEFFEC000A29963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC86934A1CEFFEC000A29963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC86934C1CEFFEC000A29963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SecretPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuxi.SecretPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC86934D1CEFFEC000A29963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SecretPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuxi.SecretPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC86934F1CEFFEC000A29963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SecretPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuxi.SecretPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretPhotos.app/SecretPhotos";
+			};
+			name = Debug;
+		};
+		CC8693501CEFFEC000A29963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SecretPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuxi.SecretPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretPhotos.app/SecretPhotos";
+			};
+			name = Release;
+		};
+		CC8693521CEFFEC000A29963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SecretPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuxi.SecretPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SecretPhotos;
+			};
+			name = Debug;
+		};
+		CC8693531CEFFEC000A29963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SecretPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuxi.SecretPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SecretPhotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC8693191CEFFEC000A29963 /* Build configuration list for PBXProject "SecretPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8693491CEFFEC000A29963 /* Debug */,
+				CC86934A1CEFFEC000A29963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC86934B1CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC86934C1CEFFEC000A29963 /* Debug */,
+				CC86934D1CEFFEC000A29963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC86934E1CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC86934F1CEFFEC000A29963 /* Debug */,
+				CC8693501CEFFEC000A29963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC8693511CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8693521CEFFEC000A29963 /* Debug */,
+				CC8693531CEFFEC000A29963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC8693161CEFFEC000A29963 /* Project object */;
+}
