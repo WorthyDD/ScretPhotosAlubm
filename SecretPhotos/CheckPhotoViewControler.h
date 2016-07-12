@@ -10,7 +10,6 @@
 #import "PhotosViewController.h"
 
 @interface CheckPhotoViewControler : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *iv;
-@property (nonatomic, weak) PhotosViewController *photoVC;
-@property (nonatomic) NSData *imData;
+@property (nonatomic) NSMutableArray *photos;
+@property (nonatomic, assign) NSInteger currentIndex;
 @end

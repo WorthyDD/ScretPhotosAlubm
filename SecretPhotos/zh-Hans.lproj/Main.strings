@@ -1,0 +1,18 @@
+
+/* Class = "UINavigationItem"; title = "我的相册"; ObjectID = "8c7-12-PJc"; */
+"8c7-12-PJc.title" = "我的相册";
+
+/* Class = "UINavigationItem"; title = "相册助手"; ObjectID = "CVj-Mc-kpz"; */
+"CVj-Mc-kpz.title" = "相册助手";
+
+/* Class = "UIBarButtonItem"; title = "添加"; ObjectID = "HHk-KE-tAW"; */
+"HHk-KE-tAW.title" = "添加";
+
+/* Class = "UIButton"; normalTitle = "开启相册"; ObjectID = "PL2-7Q-0Xy"; */
+"PL2-7Q-0Xy.normalTitle" = "开启相册";
+
+/* Class = "UIButton"; normalTitle = "删除"; ObjectID = "cB0-eW-NcQ"; */
+"cB0-eW-NcQ.normalTitle" = "删除";
+
+/* Class = "UIButton"; normalTitle = "保存相册"; ObjectID = "dCy-8C-ciu"; */
+"dCy-8C-ciu.normalTitle" = "保存相册";

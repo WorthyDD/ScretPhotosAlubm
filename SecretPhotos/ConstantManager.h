@@ -16,7 +16,7 @@ static NSString *const photosID = @"my_secret_photos_are_here";
 
 + (instancetype) shareManager;
 
-@property (nonatomic) NSArray<NSData *> *photos;
+@property (nonatomic) NSMutableArray<NSData *> *photos;
 
 
 - (void) loadPhotos;

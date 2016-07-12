@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0975451D3496BA00E47125 /* CusTomActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0975441D3496BA00E47125 /* CusTomActionSheetView.m */; };
+		CC0975481D3496DB00E47125 /* UIColor+TAToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0975471D3496DB00E47125 /* UIColor+TAToolkit.m */; };
 		CC8693231CEFFEC000A29963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693221CEFFEC000A29963 /* main.m */; };
 		CC8693261CEFFEC000A29963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693251CEFFEC000A29963 /* AppDelegate.m */; };
 		CC8693291CEFFEC000A29963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693281CEFFEC000A29963 /* ViewController.m */; };
@@ -43,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC0975431D3496BA00E47125 /* CusTomActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusTomActionSheetView.h; sourceTree = "<group>"; };
+		CC0975441D3496BA00E47125 /* CusTomActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusTomActionSheetView.m; sourceTree = "<group>"; };
+		CC0975461D3496DB00E47125 /* UIColor+TAToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TAToolkit.h"; sourceTree = "<group>"; };
+		CC0975471D3496DB00E47125 /* UIColor+TAToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TAToolkit.m"; sourceTree = "<group>"; };
+		CC0975491D34DC8E00E47125 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CC09754A1D34DC8E00E47125 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		CC86931E1CEFFEC000A29963 /* SecretPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8693221CEFFEC000A29963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC8693241CEFFEC000A29963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +109,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC1A863B1D26722F000DC6A5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CC0975461D3496DB00E47125 /* UIColor+TAToolkit.h */,
+				CC0975471D3496DB00E47125 /* UIColor+TAToolkit.m */,
+				CC0975431D3496BA00E47125 /* CusTomActionSheetView.h */,
+				CC0975441D3496BA00E47125 /* CusTomActionSheetView.m */,
+				CC8693541CF0007D00A29963 /* UIView+Geometry.h */,
+				CC8693551CF0007D00A29963 /* UIView+Geometry.m */,
+				CC8693561CF0007D00A29963 /* UIView+IBInspect.h */,
+				CC8693571CF0007D00A29963 /* UIView+IBInspect.m */,
+				CC8693601CF005DC00A29963 /* MSImagePickerController.h */,
+				CC8693611CF005DC00A29963 /* MSImagePickerController.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		CC1A863C1D267252000DC6A5 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				CC8693271CEFFEC000A29963 /* ViewController.h */,
+				CC8693281CEFFEC000A29963 /* ViewController.m */,
+			);
+			name = MainPage;
+			sourceTree = "<group>";
+		};
+		CC1A863D1D26726B000DC6A5 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				CC8693631CF0086400A29963 /* PhotoCell.h */,
+				CC8693641CF0086400A29963 /* PhotoCell.m */,
+				CC8693651CF0086400A29963 /* PhotoCell.xib */,
+				CC86935A1CF0023800A29963 /* PhotosViewController.h */,
+				CC86935B1CF0023800A29963 /* PhotosViewController.m */,
+				CC8693681CF0147E00A29963 /* CheckPhotoViewControler.h */,
+				CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */,
+			);
+			name = PhotoList;
+			sourceTree = "<group>";
+		};
 		CC8693151CEFFEC000A29963 = {
 			isa = PBXGroup;
 			children = (
@@ -124,23 +172,12 @@
 		CC8693201CEFFEC000A29963 /* SecretPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				CC8693541CF0007D00A29963 /* UIView+Geometry.h */,
-				CC8693551CF0007D00A29963 /* UIView+Geometry.m */,
-				CC8693561CF0007D00A29963 /* UIView+IBInspect.h */,
-				CC8693571CF0007D00A29963 /* UIView+IBInspect.m */,
-				CC8693601CF005DC00A29963 /* MSImagePickerController.h */,
-				CC8693611CF005DC00A29963 /* MSImagePickerController.m */,
-				CC8693631CF0086400A29963 /* PhotoCell.h */,
-				CC8693641CF0086400A29963 /* PhotoCell.m */,
-				CC8693651CF0086400A29963 /* PhotoCell.xib */,
+				CC1A863B1D26722F000DC6A5 /* Tools */,
+				CC1A863C1D267252000DC6A5 /* MainPage */,
+				CC1A863D1D26726B000DC6A5 /* PhotoList */,
 				CC86935D1CF0035100A29963 /* ConstantManager.h */,
 				CC86935E1CF0035100A29963 /* ConstantManager.m */,
-				CC8693271CEFFEC000A29963 /* ViewController.h */,
-				CC8693281CEFFEC000A29963 /* ViewController.m */,
-				CC86935A1CF0023800A29963 /* PhotosViewController.h */,
-				CC86935B1CF0023800A29963 /* PhotosViewController.m */,
-				CC8693681CF0147E00A29963 /* CheckPhotoViewControler.h */,
-				CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */,
+				CC86932A1CEFFEC000A29963 /* Main.storyboard */,
 				CC8693211CEFFEC000A29963 /* Supporting Files */,
 			);
 			path = SecretPhotos;
@@ -149,7 +186,6 @@
 		CC8693211CEFFEC000A29963 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC86932A1CEFFEC000A29963 /* Main.storyboard */,
 				CC8693321CEFFEC000A29963 /* Info.plist */,
 				CC86932D1CEFFEC000A29963 /* Assets.xcassets */,
 				CC86932F1CEFFEC000A29963 /* LaunchScreen.storyboard */,
@@ -312,12 +348,14 @@
 			files = (
 				CC8693661CF0086400A29963 /* PhotoCell.m in Sources */,
 				CC8693581CF0007D00A29963 /* UIView+Geometry.m in Sources */,
+				CC0975451D3496BA00E47125 /* CusTomActionSheetView.m in Sources */,
 				CC8693621CF005DC00A29963 /* MSImagePickerController.m in Sources */,
 				CC86935C1CF0023800A29963 /* PhotosViewController.m in Sources */,
 				CC8693291CEFFEC000A29963 /* ViewController.m in Sources */,
 				CC86936A1CF0147E00A29963 /* CheckPhotoViewControler.m in Sources */,
 				CC8693591CF0007D00A29963 /* UIView+IBInspect.m in Sources */,
 				CC86935F1CF0035100A29963 /* ConstantManager.m in Sources */,
+				CC0975481D3496DB00E47125 /* UIColor+TAToolkit.m in Sources */,
 				CC8693261CEFFEC000A29963 /* AppDelegate.m in Sources */,
 				CC8693231CEFFEC000A29963 /* main.m in Sources */,
 			);
@@ -359,6 +397,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CC86932B1CEFFEC000A29963 /* Base */,
+				CC0975491D34DC8E00E47125 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -367,6 +406,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CC8693301CEFFEC000A29963 /* Base */,
+				CC09754A1D34DC8E00E47125 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -411,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -449,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -460,7 +500,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SecretPhotos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -474,7 +513,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SecretPhotos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -549,6 +587,7 @@
 				CC86934D1CEFFEC000A29963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC86934E1CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +596,7 @@
 				CC8693501CEFFEC000A29963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC8693511CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotosUITests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +605,7 @@
 				CC8693531CEFFEC000A29963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,9 +8,13 @@
 
 #import "ViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "CusTomActionSheetView.h"
 
-@interface ViewController ()
+#define bg_image_key @"backgroungImageKey"
 
+@interface ViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 
 @end
 
@@ -18,9 +22,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    
+     //Do any additional setup after loading the view, typically from a nib.
+    _bgImage.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTapBGImage:)];
+    [_bgImage addGestureRecognizer:tap];
+    NSData *imData = [[NSUserDefaults standardUserDefaults]objectForKey:bg_image_key];
+    if(imData){
+        UIImage *im = [UIImage imageWithData:imData];
+        [_bgImage setImage:im];
+    }
+}
+
+- (void) didTapBGImage : (UITapGestureRecognizer *)tap
+{
+    CusTomActionSheetView *sheet = [[CusTomActionSheetView alloc]initWithTitle:@"更换背景" andItemTitles:@[@"选择照片", @"系统默认"] cancleTitle:@"取消"];
+    sheet.handler = ^(NSInteger index){
+        if(index == 0){
+            UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            picker.allowsEditing = NO;
+            picker.delegate = self;
+            [self presentViewController:picker animated:YES completion:^{
+                
+            }];
+        }
+        else if(index == 1){
+            [_bgImage setImage:[UIImage imageNamed:@"start"]];
+            [[NSUserDefaults standardUserDefaults]removeObjectForKey:bg_image_key];
+        }
+    };
+    [sheet show];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    [picker dismissViewControllerAnimated:YES completion:^{
+        UIImage *im = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+        [_bgImage setImage:im];
+        NSData *data = UIImageJPEGRepresentation(im, 1.0);
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:bg_image_key];
+    }];
 }
 
 - (IBAction)open:(id)sender {

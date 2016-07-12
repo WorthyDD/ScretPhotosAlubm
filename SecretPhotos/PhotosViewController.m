@@ -12,11 +12,14 @@
 #import "PhotoCell.h"
 #import "CheckPhotoViewControler.h"
 
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
 @interface PhotosViewController ()<MSImagePickerDelegate, UINavigationControllerDelegate, UICollectionViewDelegateFlowLayout>
 
 
 
-
+@property (nonatomic) UIActivityIndicatorView *indicator;
 @end
 
 @implementation PhotosViewController
@@ -29,14 +32,22 @@ static NSString * const reuseIdentifier = @"Cell";
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    
+    _indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    _indicator.center = CGPointMake(SCREEN_WIDTH/2.0, SCREEN_HEIGHT/2.0);
+    _indicator.hidden = YES;
+    [_indicator setHidesWhenStopped:YES];
     UINib *nib = [UINib nibWithNibName:@"PhotoCell" bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"Cell"];
     
-    _photos = [NSMutableArray arrayWithArray:[ConstantManager shareManager].photos];
+    _photos = [ConstantManager shareManager].photos;
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.collectionView reloadData];
+}
 
 - (IBAction)addPhotos:(id)sender {
     
@@ -96,8 +107,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSData *data = _photos[indexPath.row];
-    [self performSegueWithIdentifier:@"check" sender:data];
+//    NSData *data = _photos[indexPath.row];
+    [self performSegueWithIdentifier:@"check" sender:@(indexPath.row)];
     
 }
 
@@ -141,12 +152,14 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     
     [picker dismissViewControllerAnimated:YES completion:^{
+        [_indicator startAnimating];
         for(UIImage *im in images){
             NSData *data = UIImageJPEGRepresentation(im, 1.0);
             [_photos addObject:data];
         }
-        [ConstantManager shareManager].photos = _photos;
+//        [ConstantManager shareManager].photos = _photos;
         [self.collectionView reloadData];
+        [_indicator stopAnimating];
     }];
 }
 
@@ -160,8 +173,8 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     if([segue.identifier isEqualToString:@"check"]){
         CheckPhotoViewControler *vc = segue.destinationViewController;
-        vc.photoVC = self;
-        vc.imData = sender;
+        vc.currentIndex = ((NSNumber *)sender).integerValue;
+        vc.photos = _photos;
     }
 }
 @end
