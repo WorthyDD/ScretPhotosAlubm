@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SecretPhotos
+
+  Created by 武淅 段 on 16/7/12.
+  Copyright © 2016年 武淅 段. All rights reserved.
+*/
+
+"changeBG" = "更换背景"
+"OK" = "确定"
+"cancle" = "取消"
+"chooseAlbum" = "从相册选择"
+"defaultBG" = "默认背景"

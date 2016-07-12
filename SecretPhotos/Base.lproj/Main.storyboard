@@ -227,6 +227,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="start" width="200" height="356"/>
+        <image name="start" width="200" height="355"/>
     </resources>
 </document>

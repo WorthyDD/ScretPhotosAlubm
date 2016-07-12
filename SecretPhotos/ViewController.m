@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 #import "CusTomActionSheetView.h"
+#import <QuartzCore/CAAnimation.h>
 
 #define bg_image_key @"backgroungImageKey"
 
@@ -31,11 +32,19 @@
         UIImage *im = [UIImage imageWithData:imData];
         [_bgImage setImage:im];
     }
+    
+    
+    CATransition *myTransition=[CATransition animation];//创建CATransition
+    myTransition.duration=0.3;//持续时长0.3秒
+    myTransition.timingFunction=UIViewAnimationCurveEaseInOut;//计时函数，从头到尾的流畅度
+    myTransition.type=@"reveal";//动画类型
+    myTransition.subtype=kCATransitionFromLeft;//子类型
+    [self.navigationController.view.layer addAnimation:myTransition forKey:nil];
 }
 
 - (void) didTapBGImage : (UITapGestureRecognizer *)tap
 {
-    CusTomActionSheetView *sheet = [[CusTomActionSheetView alloc]initWithTitle:@"更换背景" andItemTitles:@[@"选择照片", @"系统默认"] cancleTitle:@"取消"];
+    CusTomActionSheetView *sheet = [[CusTomActionSheetView alloc]initWithTitle:NSLocalizedString(@"changeBG", nil) andItemTitles:@[NSLocalizedString(@"chooseAlbum", nil), NSLocalizedString(@"defaultBG", nil)] cancleTitle:@"取消"];
     sheet.handler = ^(NSInteger index){
         if(index == 0){
             UIImagePickerController *picker = [[UIImagePickerController alloc]init];
