@@ -6,8 +6,15 @@
   Copyright © 2016年 武淅 段. All rights reserved.
 */
 
-"changeBG" = "更换背景"
-"OK" = "确定"
-"cancle" = "取消"
-"chooseAlbum" = "从相册选择"
-"defaultBG" = "默认背景"
+changeBG = "更换背景";
+OK = "确定";
+cancle = "取消";
+chooseAlbum = "从相册选择";
+defaultBG = "默认背景";
+add = "添加";
+delete = "删除";
+warning = "警告";
+askDelete = "你确定要删除选中的图片吗?";
+tip = "提示";
+saveSuccess = "保存图片成功!";
+saveFail = "保存图片失败!";

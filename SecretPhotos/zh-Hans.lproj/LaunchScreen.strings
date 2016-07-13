@@ -1,3 +1,6 @@
 
-/* Class = "UILabel"; text = "your secret photos"; ObjectID = "mwg-LX-wbx"; */
-"mwg-LX-wbx.text" = "您的私人相册";
+/* Class = "UILabel"; text = "your secret photo Album"; ObjectID = "mwg-LX-wbx"; */
+"mwg-LX-wbx.text" = "您的私密相册";
+
+/* Class = "UILabel"; text = "Developed by Wuxi"; ObjectID = "wlx-Mw-mR0"; */
+"wlx-Mw-mR0.text" = "Developed by Wuxi";

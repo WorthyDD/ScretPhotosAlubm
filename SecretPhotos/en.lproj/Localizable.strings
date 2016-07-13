@@ -2,11 +2,18 @@
   Localizable.strings
   SecretPhotos
 
-  Created by 武淅 段 on 16/7/12.
+  Created by 武淅 段 on 16/7/13.
   Copyright © 2016年 武淅 段. All rights reserved.
 */
-"changeBG" = "change background"
-"OK" = "OK"
-"cancle" = "cancle"
-"chooseAlbum" = "choose from album"
-"defaultBG" = "default background"
+changeBG = "change background";
+OK = "OK";
+cancle = "cancle";
+chooseAlbum = "choose from album";
+defaultBG = "default background";
+add = "add";
+delete = "delete";
+warning = "warning";
+askDelete = "Are you sure to delete this picture?";
+tip = "tip";
+saveSuccess = "save photo success!";
+saveFail = "save photo fail!";

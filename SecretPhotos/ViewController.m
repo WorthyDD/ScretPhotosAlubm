@@ -44,7 +44,7 @@
 
 - (void) didTapBGImage : (UITapGestureRecognizer *)tap
 {
-    CusTomActionSheetView *sheet = [[CusTomActionSheetView alloc]initWithTitle:NSLocalizedString(@"changeBG", nil) andItemTitles:@[NSLocalizedString(@"chooseAlbum", nil), NSLocalizedString(@"defaultBG", nil)] cancleTitle:@"取消"];
+    CusTomActionSheetView *sheet = [[CusTomActionSheetView alloc]initWithTitle:NSLocalizedString(@"changeBG", nil) andItemTitles:@[NSLocalizedString(@"chooseAlbum", nil), NSLocalizedString(@"defaultBG", nil)] cancleTitle:NSLocalizedString(@"cancle", nil)];
     sheet.handler = ^(NSInteger index){
         if(index == 0){
             UIImagePickerController *picker = [[UIImagePickerController alloc]init];

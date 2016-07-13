@@ -42,13 +42,13 @@
 - (IBAction)delete:(id)sender {
     
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"您确定要删除该照片?" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *delete = [UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"warning", nil) message:NSLocalizedString(@"askDelete", nil) preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *delete = [UIAlertAction actionWithTitle:NSLocalizedString(@"delete", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         [_photos removeObjectAtIndex:_currentIndex];
         [_collectionView reloadData];
 //        [ConstantManager shareManager].photos = _photos;
     }];
-    UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *cancle = [UIAlertAction actionWithTitle:NSLocalizedString(@"cancle", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     [alert addAction:delete];
@@ -70,17 +70,17 @@
 {
     NSString *msg = nil ;
     if(error != NULL){
-        msg = @"保存图片失败" ;
+        msg = NSLocalizedString(@"saveFail", nil) ;
     }else{
-        msg = @"保存图片成功" ;
+        msg = NSLocalizedString(@"saveSuccess", nil);
     
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"保存图片结果提示"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"tip", nil)
                           
                                                     message:msg
                         
                                                    delegate:self
                 
-                                          cancelButtonTitle:@"确定"
+                                          cancelButtonTitle:NSLocalizedString(@"OK", nil)
                           
                                           otherButtonTitles:nil];
         [alert show];
