@@ -73,10 +73,17 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Photo Assistant" id="CVj-Mc-kpz"/>
+                    <navigationItem key="navigationItem" title="Photo Assistant" id="CVj-Mc-kpz">
+                        <barButtonItem key="rightBarButtonItem" title="setting" id="2Ve-8C-bac">
+                            <connections>
+                                <action selector="disTapSetting:" destination="BYZ-38-t0r" id="j4W-dO-TCC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bgImage" destination="Ymd-1m-VSz" id="NaE-PR-YuM"/>
+                        <outlet property="openButton" destination="PL2-7Q-0Xy" id="i7W-wM-hy4"/>
                         <segue destination="81h-sC-AfZ" kind="push" identifier="photos" id="11t-KD-p3Z"/>
                     </connections>
                 </viewController>

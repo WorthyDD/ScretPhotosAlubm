@@ -17,3 +17,7 @@ askDelete = "Are you sure to delete this picture?";
 tip = "tip";
 saveSuccess = "save photo success!";
 saveFail = "save photo fail!";
+settingButtonName = "set the button's name";
+inputTip = "plase input the title you want";
+setting = "setting";
+
