@@ -24,13 +24,15 @@
 
 - (void)loadPhotos
 {
+
     NSArray *arr = [[NSUserDefaults standardUserDefaults] objectForKey:photosID];
-    self.photos = [NSMutableArray arrayWithArray:arr];
+    self.photoKeys = [NSMutableArray arrayWithArray:arr];
+
 }
 
 - (void) savePhotos
 {
-    [[NSUserDefaults standardUserDefaults] setObject:self.photos forKey:photosID];
+    [[NSUserDefaults standardUserDefaults] setObject:self.photoKeys forKey:photosID];
 }
 
 @end

@@ -39,7 +39,7 @@ static NSString * const reuseIdentifier = @"Cell";
     UINib *nib = [UINib nibWithNibName:@"PhotoCell" bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"Cell"];
     
-    _photos = [ConstantManager shareManager].photos;
+    _photos = [ConstantManager shareManager].photoKeys;
     
 }
 
@@ -81,7 +81,8 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    NSData *imData = _photos[indexPath.row];
+    NSString *imKey = _photos[indexPath.row];
+    NSData *imData = [[NSUserDefaults standardUserDefaults]objectForKey:imKey];
     UIImage *im = [UIImage imageWithData:imData];
     [cell.photo setImage:im];
     
@@ -153,12 +154,18 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [picker dismissViewControllerAnimated:YES completion:^{
         [_indicator startAnimating];
+        _indicator.hidden = NO;
         for(UIImage *im in images){
             NSData *data = UIImageJPEGRepresentation(im, 1.0);
-            [_photos addObject:data];
+            NSTimeInterval time = [[NSDate date]timeIntervalSince1970]*1000;
+            NSString *imKey = [NSString stringWithFormat:@"%.f", time];
+            NSLog(@"\n\nkey---%@\n\n", imKey);
+            [[ConstantManager shareManager].photoKeys addObject:imKey];
+            [[NSUserDefaults standardUserDefaults]setObject:data forKey:imKey];
         }
 //        [ConstantManager shareManager].photos = _photos;
         [self.collectionView reloadData];
+        [[ConstantManager shareManager]savePhotos];
         [_indicator stopAnimating];
     }];
 }

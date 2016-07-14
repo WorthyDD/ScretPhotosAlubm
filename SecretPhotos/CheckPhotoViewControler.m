@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _photos = [ConstantManager shareManager].photos;
+    _photos = [ConstantManager shareManager].photoKeys;
 }
 
 /*
@@ -44,9 +44,10 @@
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"warning", nil) message:NSLocalizedString(@"askDelete", nil) preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *delete = [UIAlertAction actionWithTitle:NSLocalizedString(@"delete", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        NSString *imKey = _photos[_currentIndex];
+        [[NSUserDefaults standardUserDefaults]removeObjectForKey:imKey];
         [_photos removeObjectAtIndex:_currentIndex];
         [_collectionView reloadData];
-//        [ConstantManager shareManager].photos = _photos;
     }];
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:NSLocalizedString(@"cancle", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
@@ -62,8 +63,9 @@
 }
 - (IBAction)save:(id)sender {
     
-    NSData *data = _photos[_currentIndex];
-    UIImageWriteToSavedPhotosAlbum([UIImage imageWithData:data], self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    NSString *imKey = _photos[_currentIndex];
+    NSData *imData = [[NSUserDefaults standardUserDefaults]objectForKey:imKey];
+    UIImageWriteToSavedPhotosAlbum([UIImage imageWithData:imData], self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 }
 
 - (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
@@ -104,7 +106,8 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    NSData *imData = _photos[indexPath.row];
+    NSString *imKey = _photos[indexPath.row];
+    NSData *imData = [[NSUserDefaults standardUserDefaults]objectForKey:imKey];
     UIImage *im = [UIImage imageWithData:imData];
     for(UIView *v in cell.contentView.subviews){
         if([v isKindOfClass:[UIImageView class]]){
