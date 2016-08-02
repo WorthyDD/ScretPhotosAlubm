@@ -79,8 +79,8 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
+//    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    PhotoCell *cell = [PhotoCell cellFromXib:collectionView indexPath:indexPath];
     NSString *imKey = _photos[indexPath.row];
     NSData *imData = [[NSUserDefaults standardUserDefaults]objectForKey:imKey];
     UIImage *im = [UIImage imageWithData:imData];

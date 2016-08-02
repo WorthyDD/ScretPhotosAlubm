@@ -10,7 +10,7 @@
 
 @interface PhotoCell : UICollectionViewCell
 
-
++ (instancetype) cellFromXib : (UICollectionView *)collectionView indexPath : (NSIndexPath *)indexPath;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 
 
