@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="p6u-FR-HpH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="p6u-FR-HpH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -84,12 +84,108 @@
                     <connections>
                         <outlet property="bgImage" destination="Ymd-1m-VSz" id="NaE-PR-YuM"/>
                         <outlet property="openButton" destination="PL2-7Q-0Xy" id="i7W-wM-hy4"/>
-                        <segue destination="81h-sC-AfZ" kind="push" identifier="photos" id="11t-KD-p3Z"/>
+                        <segue destination="fXT-hL-xU8" kind="push" identifier="photos" id="05n-gt-lQX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="878" y="291"/>
+        </scene>
+        <!--Photo Video Select Controller-->
+        <scene sceneID="7p4-AS-reS">
+            <objects>
+                <viewController id="fXT-hL-xU8" customClass="PhotoVideoSelectController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JkC-OJ-L0g"/>
+                        <viewControllerLayoutGuide type="bottom" id="IMX-Ba-nZD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t43-mj-Nhe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgq-sW-IdR">
+                                <rect key="frame" x="110" y="155" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5pA-0l-X6A"/>
+                                    <constraint firstAttribute="width" constant="100" id="Dxr-2X-C9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="photos">
+                                    <color key="titleColor" red="0.46914580639303738" green="0.73522332698383841" blue="0.36818384905654572" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                        <color key="value" red="0.46914580639999998" green="0.73522332700000004" blue="0.36818384910000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerShadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerShadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layerShadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="81h-sC-AfZ" kind="push" identifier="photo" id="Jbr-Br-clh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ay1-x8-eUv">
+                                <rect key="frame" x="110" y="264" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bdU-n0-2Vy"/>
+                                    <constraint firstAttribute="height" constant="40" id="haZ-ID-0i2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="videos">
+                                    <color key="titleColor" red="0.46914580639999998" green="0.73522332700000004" blue="0.36818384910000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                        <color key="value" red="0.46914580639999998" green="0.73522332700000004" blue="0.36818384910000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerShadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerShadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layerShadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="81h-sC-AfZ" kind="push" identifier="video" id="DyJ-gD-syC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ay1-x8-eUv" firstAttribute="centerX" secondItem="Rgq-sW-IdR" secondAttribute="centerX" id="3UI-SS-ldQ"/>
+                            <constraint firstItem="Rgq-sW-IdR" firstAttribute="centerX" secondItem="t43-mj-Nhe" secondAttribute="centerX" id="dz0-0d-nXs"/>
+                            <constraint firstItem="Ay1-x8-eUv" firstAttribute="top" secondItem="Rgq-sW-IdR" secondAttribute="bottom" constant="69" id="hgW-IG-noI"/>
+                            <constraint firstItem="Rgq-sW-IdR" firstAttribute="top" secondItem="JkC-OJ-L0g" secondAttribute="bottom" constant="91" id="lih-MG-67B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TL7-gd-868"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zn0-g2-Cfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341" y="291"/>
         </scene>
         <!--My Photos-->
         <scene sceneID="GcU-Ey-gjs">
@@ -125,7 +221,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2v-vi-oGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="296"/>
+            <point key="canvasLocation" x="1795" y="296"/>
         </scene>
         <!--Check Photo View Controler-->
         <scene sceneID="Rjq-Am-sTe">
@@ -210,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1X-CM-caE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="296"/>
+            <point key="canvasLocation" x="2163" y="296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CGH-Hn-A4k">
@@ -236,4 +332,7 @@
     <resources>
         <image name="start" width="200" height="355"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DyJ-gD-syC"/>
+    </inferredMetricsTieBreakers>
 </document>

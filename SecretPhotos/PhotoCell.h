@@ -12,6 +12,7 @@
 
 + (instancetype) cellFromXib : (UICollectionView *)collectionView indexPath : (NSIndexPath *)indexPath;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
+@property (weak, nonatomic) IBOutlet UIImageView *checkImageView;
 
 
 @end

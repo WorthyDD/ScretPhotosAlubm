@@ -10,6 +10,7 @@
 #import <LocalAuthentication/LocalAuthentication.h>
 #import "CusTomActionSheetView.h"
 #import <QuartzCore/CAAnimation.h>
+#import "PhotosViewController.h"
 
 #define bg_image_key @"backgroungImageKey"
 #define button_name_key @"buttonNameKey"
@@ -138,5 +139,8 @@
     };
     [sheet show];
 }
+
+
+
 
 @end

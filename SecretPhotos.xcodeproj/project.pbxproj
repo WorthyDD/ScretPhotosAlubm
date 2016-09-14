@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2E8AD02DD90513A524CE1F /* libPods-SecretPhotos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15886A98461BD99D642D02CC /* libPods-SecretPhotos.a */; };
 		CC0975451D3496BA00E47125 /* CusTomActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0975441D3496BA00E47125 /* CusTomActionSheetView.m */; };
 		CC0975481D3496DB00E47125 /* UIColor+TAToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0975471D3496DB00E47125 /* UIColor+TAToolkit.m */; };
 		CC1346D01D35E4A2001B583B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC1346D21D35E4A2001B583B /* Localizable.strings */; };
+		CC2498E11D89605E006F7C1F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2498E01D89605E006F7C1F /* AssetsLibrary.framework */; };
+		CC6ADBDD1D88F1DF00B7BB4A /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6ADBDC1D88F1DF00B7BB4A /* Video.m */; };
+		CC6ADBDF1D88F39A00B7BB4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6ADBDE1D88F39A00B7BB4A /* AVFoundation.framework */; };
+		CC6ADBE11D88F3A100B7BB4A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6ADBE01D88F3A100B7BB4A /* AVKit.framework */; };
+		CC6ADBE31D8910BA00B7BB4A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6ADBE21D8910BA00B7BB4A /* MediaPlayer.framework */; };
 		CC8693231CEFFEC000A29963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693221CEFFEC000A29963 /* main.m */; };
 		CC8693261CEFFEC000A29963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693251CEFFEC000A29963 /* AppDelegate.m */; };
 		CC8693291CEFFEC000A29963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693281CEFFEC000A29963 /* ViewController.m */; };
@@ -26,6 +32,11 @@
 		CC8693661CF0086400A29963 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693641CF0086400A29963 /* PhotoCell.m */; };
 		CC8693671CF0086400A29963 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8693651CF0086400A29963 /* PhotoCell.xib */; };
 		CC86936A1CF0147E00A29963 /* CheckPhotoViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */; };
+		CCC2D2531D87C3120035DA1D /* VideosCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC2D2521D87C3120035DA1D /* VideosCollectionController.m */; };
+		CCC2D2561D87E7580035DA1D /* PhotoVideoSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC2D2551D87E7580035DA1D /* PhotoVideoSelectController.m */; };
+		CCC2D25A1D87EFCD0035DA1D /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC2D2581D87EFCD0035DA1D /* VideoCell.m */; };
+		CCC2D25B1D87EFCD0035DA1D /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC2D2591D87EFCD0035DA1D /* VideoCell.xib */; };
+		CCC2D25D1D87FA6A0035DA1D /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC2D25C1D87FA6A0035DA1D /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15886A98461BD99D642D02CC /* libPods-SecretPhotos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecretPhotos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFEA5ADE4BF54211213311D /* Pods-SecretPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretPhotos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecretPhotos/Pods-SecretPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		5BE4442378EFF4A906BFD3D9 /* Pods-SecretPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretPhotos.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecretPhotos/Pods-SecretPhotos.release.xcconfig"; sourceTree = "<group>"; };
 		CC0975431D3496BA00E47125 /* CusTomActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusTomActionSheetView.h; sourceTree = "<group>"; };
 		CC0975441D3496BA00E47125 /* CusTomActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusTomActionSheetView.m; sourceTree = "<group>"; };
 		CC0975461D3496DB00E47125 /* UIColor+TAToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TAToolkit.h"; sourceTree = "<group>"; };
@@ -54,6 +68,12 @@
 		CC1346CF1D35E38D001B583B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		CC1346D11D35E4A2001B583B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC1346D31D35E4AF001B583B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC2498E01D89605E006F7C1F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CC6ADBDB1D88F1DF00B7BB4A /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		CC6ADBDC1D88F1DF00B7BB4A /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		CC6ADBDE1D88F39A00B7BB4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CC6ADBE01D88F3A100B7BB4A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		CC6ADBE21D8910BA00B7BB4A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		CC86931E1CEFFEC000A29963 /* SecretPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8693221CEFFEC000A29963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC8693241CEFFEC000A29963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +105,14 @@
 		CC8693651CF0086400A29963 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		CC8693681CF0147E00A29963 /* CheckPhotoViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckPhotoViewControler.h; sourceTree = "<group>"; };
 		CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckPhotoViewControler.m; sourceTree = "<group>"; };
+		CCC2D2511D87C3120035DA1D /* VideosCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosCollectionController.h; sourceTree = "<group>"; };
+		CCC2D2521D87C3120035DA1D /* VideosCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosCollectionController.m; sourceTree = "<group>"; };
+		CCC2D2541D87E7580035DA1D /* PhotoVideoSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoVideoSelectController.h; sourceTree = "<group>"; };
+		CCC2D2551D87E7580035DA1D /* PhotoVideoSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoVideoSelectController.m; sourceTree = "<group>"; };
+		CCC2D2571D87EFCD0035DA1D /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		CCC2D2581D87EFCD0035DA1D /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		CCC2D2591D87EFCD0035DA1D /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		CCC2D25C1D87FA6A0035DA1D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +120,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2498E11D89605E006F7C1F /* AssetsLibrary.framework in Frameworks */,
+				CC6ADBE31D8910BA00B7BB4A /* MediaPlayer.framework in Frameworks */,
+				CC6ADBE11D88F3A100B7BB4A /* AVKit.framework in Frameworks */,
+				CC6ADBDF1D88F39A00B7BB4A /* AVFoundation.framework in Frameworks */,
+				CCC2D25D1D87FA6A0035DA1D /* Photos.framework in Frameworks */,
+				2A2E8AD02DD90513A524CE1F /* libPods-SecretPhotos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +146,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DB4822107ED307E99BADFC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2498E01D89605E006F7C1F /* AssetsLibrary.framework */,
+				15886A98461BD99D642D02CC /* libPods-SecretPhotos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B22481B88F10F2990D784AD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CFEA5ADE4BF54211213311D /* Pods-SecretPhotos.debug.xcconfig */,
+				5BE4442378EFF4A906BFD3D9 /* Pods-SecretPhotos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC1A863B1D26722F000DC6A5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +186,13 @@
 			children = (
 				CC8693271CEFFEC000A29963 /* ViewController.h */,
 				CC8693281CEFFEC000A29963 /* ViewController.m */,
+				CCC2D2541D87E7580035DA1D /* PhotoVideoSelectController.h */,
+				CCC2D2551D87E7580035DA1D /* PhotoVideoSelectController.m */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
 		};
-		CC1A863D1D26726B000DC6A5 /* PhotoList */ = {
+		CC1A863D1D26726B000DC6A5 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
 				CC8693631CF0086400A29963 /* PhotoCell.h */,
@@ -149,16 +203,34 @@
 				CC8693681CF0147E00A29963 /* CheckPhotoViewControler.h */,
 				CC8693691CF0147E00A29963 /* CheckPhotoViewControler.m */,
 			);
-			name = PhotoList;
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		CC2498DF1D895AF2006F7C1F /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				CCC2D2571D87EFCD0035DA1D /* VideoCell.h */,
+				CCC2D2581D87EFCD0035DA1D /* VideoCell.m */,
+				CCC2D2591D87EFCD0035DA1D /* VideoCell.xib */,
+				CC6ADBDB1D88F1DF00B7BB4A /* Video.h */,
+				CC6ADBDC1D88F1DF00B7BB4A /* Video.m */,
+			);
+			name = Video;
 			sourceTree = "<group>";
 		};
 		CC8693151CEFFEC000A29963 = {
 			isa = PBXGroup;
 			children = (
+				CC6ADBE21D8910BA00B7BB4A /* MediaPlayer.framework */,
+				CC6ADBE01D88F3A100B7BB4A /* AVKit.framework */,
+				CC6ADBDE1D88F39A00B7BB4A /* AVFoundation.framework */,
+				CCC2D25C1D87FA6A0035DA1D /* Photos.framework */,
 				CC8693201CEFFEC000A29963 /* SecretPhotos */,
 				CC86933A1CEFFEC000A29963 /* SecretPhotosTests */,
 				CC8693451CEFFEC000A29963 /* SecretPhotosUITests */,
 				CC86931F1CEFFEC000A29963 /* Products */,
+				B22481B88F10F2990D784AD0 /* Pods */,
+				7DB4822107ED307E99BADFC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,9 +249,11 @@
 			children = (
 				CC1A863B1D26722F000DC6A5 /* Tools */,
 				CC1A863C1D267252000DC6A5 /* MainPage */,
-				CC1A863D1D26726B000DC6A5 /* PhotoList */,
+				CC1A863D1D26726B000DC6A5 /* Photos */,
+				CC2498DF1D895AF2006F7C1F /* Video */,
 				CC86935D1CF0035100A29963 /* ConstantManager.h */,
 				CC86935E1CF0035100A29963 /* ConstantManager.m */,
+				CCC2D2501D87C2DF0035DA1D /* Videos */,
 				CC86932A1CEFFEC000A29963 /* Main.storyboard */,
 				CC8693211CEFFEC000A29963 /* Supporting Files */,
 			);
@@ -218,6 +292,15 @@
 			path = SecretPhotosUITests;
 			sourceTree = "<group>";
 		};
+		CCC2D2501D87C2DF0035DA1D /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CCC2D2511D87C3120035DA1D /* VideosCollectionController.h */,
+				CCC2D2521D87C3120035DA1D /* VideosCollectionController.m */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC86934B1CEFFEC000A29963 /* Build configuration list for PBXNativeTarget "SecretPhotos" */;
 			buildPhases = (
+				B6BB87B67F11A9C0FEAC8A99 /* 📦 Check Pods Manifest.lock */,
 				CC86931A1CEFFEC000A29963 /* Sources */,
 				CC86931B1CEFFEC000A29963 /* Frameworks */,
 				CC86931C1CEFFEC000A29963 /* Resources */,
+				1C5E1CDF62A9992EEC1E28A9 /* 📦 Embed Pods Frameworks */,
+				128CD330ECDBA353D47D0790 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,7 +371,7 @@
 				TargetAttributes = {
 					CC86931D1CEFFEC000A29963 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = NYLW8B5Y4M;
+						DevelopmentTeam = 99BGKUDWHK;
 					};
 					CC8693361CEFFEC000A29963 = {
 						CreatedOnToolsVersion = 7.3;
@@ -325,6 +411,7 @@
 				CC1346D01D35E4A2001B583B /* Localizable.strings in Resources */,
 				CC8693671CF0086400A29963 /* PhotoCell.xib in Resources */,
 				CC8693311CEFFEC000A29963 /* LaunchScreen.storyboard in Resources */,
+				CCC2D25B1D87EFCD0035DA1D /* VideoCell.xib in Resources */,
 				CC86932E1CEFFEC000A29963 /* Assets.xcassets in Resources */,
 				CC86932C1CEFFEC000A29963 /* Main.storyboard in Resources */,
 			);
@@ -346,20 +433,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		128CD330ECDBA353D47D0790 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecretPhotos/Pods-SecretPhotos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C5E1CDF62A9992EEC1E28A9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecretPhotos/Pods-SecretPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BB87B67F11A9C0FEAC8A99 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC86931A1CEFFEC000A29963 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC8693661CF0086400A29963 /* PhotoCell.m in Sources */,
+				CCC2D25A1D87EFCD0035DA1D /* VideoCell.m in Sources */,
 				CC8693581CF0007D00A29963 /* UIView+Geometry.m in Sources */,
 				CC0975451D3496BA00E47125 /* CusTomActionSheetView.m in Sources */,
 				CC8693621CF005DC00A29963 /* MSImagePickerController.m in Sources */,
 				CC86935C1CF0023800A29963 /* PhotosViewController.m in Sources */,
 				CC8693291CEFFEC000A29963 /* ViewController.m in Sources */,
+				CCC2D2531D87C3120035DA1D /* VideosCollectionController.m in Sources */,
 				CC86936A1CF0147E00A29963 /* CheckPhotoViewControler.m in Sources */,
+				CC6ADBDD1D88F1DF00B7BB4A /* Video.m in Sources */,
 				CC8693591CF0007D00A29963 /* UIView+IBInspect.m in Sources */,
 				CC86935F1CF0035100A29963 /* ConstantManager.m in Sources */,
+				CCC2D2561D87E7580035DA1D /* PhotoVideoSelectController.m in Sources */,
 				CC0975481D3496DB00E47125 /* UIColor+TAToolkit.m in Sources */,
 				CC8693261CEFFEC000A29963 /* AppDelegate.m in Sources */,
 				CC8693231CEFFEC000A29963 /* main.m in Sources */,
@@ -512,6 +651,7 @@
 		};
 		CC86934C1CEFFEC000A29963 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CFEA5ADE4BF54211213311D /* Pods-SecretPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -525,6 +665,7 @@
 		};
 		CC86934D1CEFFEC000A29963 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE4442378EFF4A906BFD3D9 /* Pods-SecretPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

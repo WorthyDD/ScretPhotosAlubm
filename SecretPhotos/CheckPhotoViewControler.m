@@ -46,6 +46,7 @@
     UIAlertAction *delete = [UIAlertAction actionWithTitle:NSLocalizedString(@"delete", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         NSString *imKey = _photos[_currentIndex];
         [[NSUserDefaults standardUserDefaults]removeObjectForKey:imKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         [_photos removeObjectAtIndex:_currentIndex];
         [_collectionView reloadData];
     }];
@@ -129,20 +130,15 @@
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 1;
+    return 0;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 1;
+    return 0;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSData *data = _photos[indexPath.row];
-    [self performSegueWithIdentifier:@"check" sender:data];
-    
-}
+
 
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView

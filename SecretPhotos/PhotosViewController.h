@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Video.h"
 
 @interface PhotosViewController : UICollectionViewController
 
 @property (nonatomic) NSMutableArray *photos;
+@property (nonatomic) NSMutableArray<Video *> *videos;
+@property (nonatomic, assign) NSInteger entry;  //0 photo 1 video
 
 @end

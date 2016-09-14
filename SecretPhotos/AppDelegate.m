@@ -19,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[ConstantManager shareManager] loadPhotos];
+    [[ConstantManager shareManager] loadVideos];
+    
     return YES;
 }
 
@@ -44,6 +46,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     [[ConstantManager shareManager] savePhotos];
+    [[ConstantManager shareManager] saveVideos];
 }
 
 @end
